@@ -473,7 +473,7 @@ class _MyAppState extends State<MyApp> {
                                                         },
                                                         children: currencyName
                                                             .map((e) => Center(
-                                                                child: Text(e)))
+                                                                child: Text(e,style: TextStyle(color: Colors.black),)))
                                                             .toList(),
                                                       ),
                                                     ),
