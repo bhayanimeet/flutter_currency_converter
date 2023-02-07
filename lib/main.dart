@@ -317,15 +317,10 @@ class _MyAppState extends State<MyApp> {
                                                   actions: [
                                                     SizedBox(
                                                       height: 300,
-                                                      width:
-                                                          MediaQuery.of(context)
-                                                              .size
-                                                              .width,
+                                                      width: MediaQuery.of(context).size.width,
                                                       child: CupertinoPicker(
-                                                        scrollController:
-                                                            scrollController,
-                                                        backgroundColor:
-                                                            Colors.white,
+                                                        scrollController: scrollController,
+                                                        backgroundColor: Colors.white,
                                                         itemExtent: 55,
                                                         onSelectedItemChanged:
                                                             (val) {
@@ -346,7 +341,7 @@ class _MyAppState extends State<MyApp> {
                                                         },
                                                         children: currencyName
                                                             .map((e) => Center(
-                                                                child: Text(e)))
+                                                                child: Text(e,style: const TextStyle(color: Colors.black),)))
                                                             .toList(),
                                                       ),
                                                     ),
